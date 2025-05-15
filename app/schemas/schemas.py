@@ -68,4 +68,7 @@ class OneTimeLoginVerify(BaseModel):
 
 class SuccessResponse(BaseModel):
     success: bool
-    message: str = "Operation completed successfully" 
+    message: str = "Operation completed successfully"
+    
+class AuthorizationResponse(BaseModel):
+    authorization_url: str 

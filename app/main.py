@@ -23,7 +23,11 @@ app = FastAPI(
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Update for production
+    allow_origins=[
+        "http://localhost:3000",                                  # Local development
+        "https://6825f2bc475882004400bca9--todoregex.netlify.app", # Deployed frontend
+        "*"                                                        # For development only, remove in production
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
