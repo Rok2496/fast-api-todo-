@@ -17,8 +17,8 @@ router = APIRouter()
 # Google OAuth2 configuration
 GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID", "")
 GOOGLE_CLIENT_SECRET = os.getenv("GOOGLE_CLIENT_SECRET", "")
-GOOGLE_REDIRECT_URI = os.getenv("GOOGLE_REDIRECT_URI", "http://localhost:8000/auth/google/callback")
-FRONTEND_REDIRECT_URL = os.getenv("FRONTEND_REDIRECT_URL", "http://localhost:3000/settings")
+GOOGLE_REDIRECT_URI = os.getenv("GOOGLE_REDIRECT_URI", "https://fast-api-todo-e9rg.onrender.com/auth/google/callback")
+FRONTEND_REDIRECT_URL = os.getenv("FRONTEND_REDIRECT_URL", "https://6825f2bc475882004400bca9--todoregex.netlify.app/settings")
 
 # Define OAuth2 scopes
 SCOPES = ['https://www.googleapis.com/auth/calendar.events']
